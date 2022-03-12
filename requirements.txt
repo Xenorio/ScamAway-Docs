@@ -1,3 +1,4 @@
+mkdocs
 mkdocs-material 
 mkdocs-render-swagger-plugin 
 mkdocs-section-index
