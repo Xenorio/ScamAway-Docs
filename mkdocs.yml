@@ -12,14 +12,14 @@ theme:
   favicon: https://github.com/Xenorio/ScamAway/raw/main/logo.png
   font: Open Sans
   palette:
-    - scheme: default
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to dark mode
     - scheme: slate
       toggle:
         icon: material/lightbulb
         name: Switch to light mode
+    - scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
   features:
     - navigation.expand
     - navigation.instant
