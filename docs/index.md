@@ -1,17 +1,29 @@
-# Welcome to MkDocs
+# Getting Started
+Welcome to the ScamAway API documentation!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This documents interaction with the [API](https://github.com/Xenorio/ScamAway-API) for the [ScamAway Discord bot](https://github.com/Xenorio/ScamAway)
 
-## Commands
+If you want to host the API yourself, head to [Setup](setup.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Requesting
+All requests must be sent to ``https://scamaway.xenorio.xyz/api/<endpoint>``
 
-## Project layout
+Depending on the endpoint, you need to send either a ``GET`` or ``POST`` request
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Get Parameters
+Parameters for ``GET`` requests must be added to the URI by appending ``?parameter1=value&parameter2=value`` to the end
+
+### Post Parameters
+Parameters for ``POST`` requests must be added as JSON data inside the request body. Please make sure to set the ``Content-Type`` header to ``application/json``
+
+## Authentication
+Administrative endpoints need an API key sent in the ``Authorization`` header. This key needs to match with the API configuration.
+
+## Errors
+When an error is encountered, the API will respond with a non-200 response code and JSON data with more information
+
+```json
+{
+    "error": "Something went wrong!"
+}
+```
