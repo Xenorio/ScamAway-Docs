@@ -16,7 +16,11 @@ Parameters for ``GET`` requests must be added to the URI by appending ``?paramet
 ### Post Parameters
 Parameters for ``POST`` requests must be added as JSON data inside the request body. Please make sure to set the ``Content-Type`` header to ``application/json``
 
-## Authentication
+## Identification
+You may provide some identifying info like your website, GitHub profile, Discord guild, or similar with the ``X-Identity`` header.
+If the ``forceIdentification`` config entry is set to ``true`` (which it is on scamaway.xenorio.xyz) this is mandatory.
+
+## Authorization
 Administrative endpoints need an API key sent in the ``Authorization`` header. This key needs to match with the API configuration.
 
 ## Errors
