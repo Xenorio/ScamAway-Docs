@@ -8,6 +8,7 @@ Adds a domain to the blocklist
 | domain | String | Domain that should be added | :x: |
 | reason | String | Reason for adding the domain | :white_check_mark: |
 | forward | String | URL to forward to Fish Fish | :white_check_mark: |
+| whitelist | Boolean | Whether to whitelist this domain (blocks forwarding) | :white_check_mark: |
 
 ## Response
 
