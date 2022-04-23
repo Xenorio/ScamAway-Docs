@@ -1,7 +1,7 @@
 # GET /all
 Get a list of all domains in the local blocklist
 
-!!! warning "This does not include external lists (phish.sinking.yachts)
+!!! warning "This does not include external lists (phish.sinking.yachts)"
 
 ## Response
 
