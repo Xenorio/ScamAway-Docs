@@ -6,7 +6,7 @@ Removes a domain from the blocklist
 
 | Name   | Type   | Description                  | Optional           |
 | ------ | ------ | ---------------------------- | ------------------ |
-| domain | String | Domain that should be added  | :x:                |
+| domain | String | Domain that should be removed  | :x:                |
 
 ## Response
 
